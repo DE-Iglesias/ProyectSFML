@@ -89,9 +89,9 @@
       <AdditionalDependencies>sfml-window-d.lib;sfml-system-d.lib;opengl32.lib;freetype.lib;sfml-graphics-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)Librerias\SFML\bin\sfml-graphics-d-2.dll  $(SolutionDir)bin\Win32\Debug 
-copy /Y $(SolutionDir)Librerias\SFML\bin\sfml-system-d-2.dll  $(SolutionDir)bin\Win32\Debug 
-copy /Y $(SolutionDir)Librerias\SFML\bin\sfml-window-d-2.dll  $(SolutionDir)bin\Win32\Debug </Command>
+      <Command>$(ProjectDir)copiar.bat $(SolutionDir) Debug -d
+
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -117,9 +117,9 @@ copy /Y $(SolutionDir)Librerias\SFML\bin\sfml-window-d-2.dll  $(SolutionDir)bin\
       <AdditionalDependencies>sfml-window.lib;sfml-system.lib;opengl32.lib;freetype.lib;sfml-graphics.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y $(SolutionDir)Librerias\SFML\bin\sfml-graphics-2.dll  $(SolutionDir)bin\Win32\Release 
-copy /Y $(SolutionDir)Librerias\SFML\bin\sfml-system-2.dll  $(SolutionDir)bin\Win32\Release
-copy /Y $(SolutionDir)Librerias\SFML\bin\sfml-window-2.dll  $(SolutionDir)bin\Win32\Release </Command>
+      <Command>$(ProjectDir)copiar.bat $(SolutionDir) Release
+
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
