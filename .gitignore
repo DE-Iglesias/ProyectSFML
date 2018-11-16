@@ -21,6 +21,8 @@ x64/
 x86/
 bld/
 [Bb]in/
+!\TileTest\Librerias\SFML\bin
+\TileTest\Librerias\STP\bin
 [Oo]bj/
 [Ll]og/
 
